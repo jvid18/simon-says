@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./main.css">
+
+  <title>Simon says</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div id="game" class="game">
+      <div class="game-board">
+        <div id="red" class="game-board__item game-board__item--top-left | game-board__item--red" data-color="red"></div>
+        <div id="blue" class="game-board__item game-board__item--top-right | game-board__item--blue" data-color="blue"></div>
+        <div id="green" class="game-board__item game-board__item--bottom-left | game-board__item--green" data-color="green"></div>
+        <div id="yellow" class="game-board__item game-board__item--bottom-right | game-board__item--yellow" data-color="yellow"></div>
+      </div>
+      <button id="btnStartGame" class="game-board__button">New game</button>
+      <p class="game-level">Current level: <span id="currentLevel" class="game-level__current-level">0</span></p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
